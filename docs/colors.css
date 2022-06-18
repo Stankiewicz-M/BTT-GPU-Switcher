@@ -1,0 +1,81 @@
+:root {
+    --color-primary: #0057c2;
+    --color-secondary: #285893;
+    --color-background: #ffffff;
+    --color-text: #1a1a1a;
+    --color-gallery: #b7cbff32;
+}
+
+/* NAVBAR */
+.topnav a {
+    color: var(--color-primary);
+    font-family: 'roboto', sans-serif;
+}
+
+.topnav a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+.topnav a.active {
+    color: var(--color-secondary);
+    font-weight: 900;
+}
+
+.topnav a.active:hover {
+    color: var(--color-background);
+    font-weight: 600;
+}
+
+.topnav .name, .topnav .name:hover {
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+/* BODY */
+body {
+    background-color: var(--color-background);
+}
+
+.copyright, .copyright-home {
+    color: var(--color-primary);
+}
+
+.content {
+    color: var(--color-text);
+    font-family: 'Roboto', sans-serif;
+}
+
+.lnk {
+    color: var(--color-primary);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button.disabled {
+    background-color: rgb(189, 189, 189);
+    cursor: not-allowed;
+}
+
+.ok {
+    color: grey;
+}
+
+/* GALLERY */
+div.gallery {
+    border: 1px solid var(--color-gallery);
+    border-radius: 7px;
+}
+
+div.gallery:hover {
+    border: 1px solid var(--color-primary);
+}
